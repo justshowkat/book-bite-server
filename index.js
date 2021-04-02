@@ -94,6 +94,4 @@ app.get("/", (req, res) => {
   res.send("this is from server");
 });
 
-app.listen(port, () => {
-  console.log(`This web app is listening at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || port);
